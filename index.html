@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./tailwind.config.js">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="container max-w-[100%] w-[90%] m-auto">
+        <div class="max-lg:collapse lg:mb-48 shadow-sm w-full rounded-md mt-[20px]">
+            <input id="navbar-1-toggle" class="peer hidden" type="checkbox" />
+            <label for="navbar-1-toggle" class="fixed inset-0 hidden max-lg:peer-checked:block"></label>
+            <div class="collapse-title navbar">
+                <div class="navbar-start">
+                    <label for="navbar-1-toggle" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="./img" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </label>
+                    <button class="btn btn-ghost text-xl ml-[40px]"><img src="./img/Frame (23).png" alt=""></button>
+                </div>
+                <div class="navbar-center hidden lg:flex ">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><button>Features</button></li>
+                        <li><button>Pricing</button></li>
+                        <li><button>Blog</button></li>
+                        <li><button>Docs</button></li>
+                        <li><button>Changelog</button></li>
+                        <li><button>We're hiring</button></li>
+                    </ul>
+                     <fieldset class="fieldset ml-[80px]">
+                            <label class="flex gap-2 cursor-pointer items-center">
+                                <input type="radio" name="theme-radios" class="radio radio-sm theme-controller"
+                                    value="default" />
+                                Default
+                            </label>
+                            <label class="flex gap-2 cursor-pointer items-center">
+                                <input type="radio" name="theme-radios" class="radio radio-sm theme-controller"
+                                    value="retro" />
+                                Retro
+                            </label>
+                            <label class="flex gap-2 cursor-pointer items-center">
+                                <input type="radio" name="theme-radios" class="radio radio-sm theme-controller"
+                                    value="cyberpunk" />
+                                Cyberpunk
+                            </label>
+                            <label class="flex gap-2 cursor-pointer items-center">
+                                <input type="radio" name="theme-radios" class="radio radio-sm theme-controller"
+                                    value="valentine" />
+                                Valentine
+                            </label>
+                            <label class="flex gap-2 cursor-pointer items-center">
+                                <input type="radio" name="theme-radios" class="radio radio-sm theme-controller"
+                                    value="aqua" />
+                                Aqua
+                            </label>
+                        </fieldset>
+                </div>
+                <div class="navbar-end">
+                    <button class="btn btn-neutral w-[100px]">Login</button>
+                </div>
+            </div>
+
+            <div class="collapse-content lg:hidden z-1 ">
+                <ul class="menu">
+                    <li><button>Features</button></li>
+                    <li><button>Pricing</button></li>
+                    <li><button>Blog</button></li>
+                    <li><button>Docs</button></li>
+                    <li><button>Changelog</button></li>
+                    <li><button>We're hiring</button></li>
+                </ul>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <section class="container max-w-[100%] w-[90%] m-auto">
+            <div class="hero min-h-screen mt-[-190px]">
+                <div class="hero-content flex-col lg:flex-row-reverse gap-[350px]">
+                    <img src="./img/Rectangle (3).png" class="max-w-sm rounded-lg shadow-2xl" />
+                    <div>
+                        <h1 class="text-[55px] font-bold">Always <br> Ready to Code.</h1>
+                        <p class="py-6 ">
+                            Spin up fresh, automated dev environments <br>
+                            for each task, in the cloud, in seconds.
+                        </p>
+                        <div class="flex gap-[40px] mt-[50px]">
+                            <button class="btn btn-warning w-[160px] py-[5px] rounded-full ">Try Now</button>
+                            <p class="text-[#12100CB2]">Open a workspace. <br>Start from any Git context.</p>
+                        </div>
+                        <div class="flex mt-[20px] gap-[30px]">
+                            <img src="./img/Frame (24).png" alt="">
+                            <img src="./img/Frame (25).png" alt="">
+                            <img src="./img/Frame (26).png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container max-w-[100%] w-[90%] m-auto">
+            <div class="hero  min-h-screen">
+                <div class="hero-content text-center">
+                    <div class="mt-[-50px]">
+                        <h1 class="text-5xl font-bold">Select project,</h1>
+                        <p class="py-6 text-[#999795] font-normal text-[55px]"> <s>
+                                check dependencies, checkout branch, view
+                                readme.txt, install tools, run build, run test,
+                            </s>
+                        </p>
+                        <h1 class="text-5xl font-bold">start coding.</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container max-w-[100%] w-[90%] m-auto">
+            <div class="hero  min-h-screen">
+                <div class="hero-content flex-col lg:flex-row-reverse gap-[260px]">
+                    <img src="./img/Frame (27).png" class="max-w-sm rounded-lg shadow-2xl " />
+                    <div>
+                        <h1 class="text-[32px] font-bold">Think CI/CD for dev environments</h1>
+                        <p class="py-6 w-[500px] text-[#12100CB2]">
+                            We invented prebuilds so application code, configuration and infrastructure can all be
+                            stored as machine-executable code in your git repositories and applied to dev environments
+                            automatically and continuously.
+                        </p>
+                        <div class=" mt-[100px]">
+                            <button class="btn btn-secondary rounded-full">More on prebuilds</button>
+                            <button class="btn btn-warning  rounded-full">Documentation</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container mx-w-[100%] w-[90%] m-auto">
+            <div>
+                <div>
+                    <h1 class="text-[55px] font-semibold text-center">Remote-first. Secure by design.</h1>
+                    <img class="mt-[50px]" src="./img/Rectangle (4).png" alt="">
+                    <div class="flex items-center flex-col mt-[50px]">
+                        <p class="w-[877px] text-[#12100CB2] font-[400px] text-[20px] text-center">
+                            You no longer need an over-powered laptop to code, Gitpod works just as smoothly on a
+                            Chromebook or iPad. All you need is a browser. Gitpod centralizes all source code and never
+                            stores it on insecure machines and networks.
+                        </p>
+                        <div class="mt-[45px]">
+                            <button class="btn  bg-white text-black border-[#e5e5e5]">
+                                <svg aria-label="MetaMask logo" width="16" height="16"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 507.83 470.86">
+                                    <defs>
+                                        <style>
+                                            .b,
+                                            .c,
+                                            .d,
+                                            .e,
+                                            .f,
+                                            .g,
+                                            .j {
+                                                stroke-linecap: round;
+                                                stroke-linejoin: round
+                                            }
+
+                                            .b {
+                                                fill: #e4761b;
+                                                stroke: #e4761b
+                                            }
+
+                                            .c {
+                                                fill: #d7c1b3;
+                                                stroke: #d7c1b3
+                                            }
+
+                                            .d {
+                                                fill: #233447;
+                                                stroke: #233447
+                                            }
+
+                                            .e {
+                                                fill: #cd6116;
+                                                stroke: #cd6116
+                                            }
+
+                                            .f {
+                                                fill: #e4751f;
+                                                stroke: #e4751f
+                                            }
+
+                                            .g {
+                                                fill: #f6851b;
+                                                stroke: #f6851b
+                                            }
+
+                                            .j {
+                                                fill: #763d16;
+                                                stroke: #763d16
+                                            }
+                                        </style>
+                                    </defs>
+                                    <path d="M482.09.5 284.32 147.38l36.58-86.66z"
+                                        style="fill:#e2761b;stroke:#e2761b;stroke-linecap:round;stroke-linejoin:round" />
+                                    <path
+                                        d="m25.54.5 196.18 148.27-34.79-88.05zM410.93 340.97l-52.67 80.7 112.7 31 32.4-109.91zM4.67 342.76l32.2 109.91 112.7-31-52.67-80.7z"
+                                        class="b" />
+                                    <path
+                                        d="m143.21 204.62-31.41 47.51 111.9 4.97-3.97-120.25zM364.42 204.62l-77.51-69.16-2.59 121.64 111.71-4.97zM149.57 421.67l67.18-32.8-58.04-45.32zM290.88 388.87l67.38 32.8-9.34-78.12z"
+                                        class="b" />
+                                    <path
+                                        d="m358.26 421.67-67.38-32.8 5.37 43.93-.6 18.48zM149.57 421.67l62.61 29.61-.4-18.48 4.97-43.93z"
+                                        class="c" />
+                                    <path
+                                        d="m213.17 314.54-56.05-16.5 39.55-18.09zM294.46 314.54l16.5-34.59 39.75 18.09z"
+                                        class="d" />
+                                    <path
+                                        d="m149.57 421.67 9.54-80.7-62.21 1.79zM348.72 340.97l9.54 80.7 52.67-78.91zM396.03 252.13l-111.71 4.97 10.34 57.44 16.5-34.59 39.75 18.09zM157.12 298.04l39.75-18.09 16.3 34.59 10.53-57.44-111.9-4.97z"
+                                        class="e" />
+                                    <path
+                                        d="m111.8 252.13 46.91 91.42-1.59-45.51zM350.91 298.04l-1.99 45.51 47.11-91.42zM223.7 257.1l-10.53 57.44 13.12 67.77 2.98-89.24zM284.32 257.1l-5.36 35.77 2.38 89.44 13.32-67.77z"
+                                        class="f" />
+                                    <path
+                                        d="m294.66 314.54-13.32 67.77 9.54 6.56 58.04-45.32 1.99-45.51zM157.12 298.04l1.59 45.51 58.04 45.32 9.54-6.56-13.12-67.77z"
+                                        class="g" />
+                                    <path
+                                        d="m295.65 451.28.6-18.48-4.97-4.38h-74.93l-4.57 4.38.4 18.48-62.61-29.61 21.86 17.88 44.32 30.81h76.13l44.52-30.81 21.86-17.88z"
+                                        style="stroke-linecap:round;stroke-linejoin:round;fill:#c0ad9e;stroke:#c0ad9e" />
+                                    <path
+                                        d="m290.88 388.87-9.54-6.56h-55.05l-9.54 6.56-4.97 43.93 4.57-4.38h74.93l4.97 4.38z"
+                                        style="stroke-linecap:round;stroke-linejoin:round;fill:#161616;stroke:#161616" />
+                                    <path
+                                        d="m490.44 156.92 16.89-81.09L482.09.5 290.88 142.41l73.54 62.21 103.95 30.41 23.06-26.83-9.94-7.15 15.9-14.51-12.32-9.54 15.9-12.13zM.5 75.83l16.89 81.09-10.73 7.95L22.56 177l-12.12 9.54 15.9 14.51-9.94 7.15 22.86 26.83 103.95-30.41 73.54-62.21L25.54.5z"
+                                        class="j" />
+                                    <path
+                                        d="m468.37 235.03-103.95-30.41 31.61 47.51-47.11 91.42 62.01-.79h92.43zM143.21 204.62 39.26 235.03 4.67 342.76H96.9l61.81.79-46.91-91.42zM284.32 257.1l6.56-114.69 30.22-81.69H186.93l29.82 81.69 6.95 114.69 2.39 36.17.2 89.04h55.05l.4-89.04z"
+                                        class="g" />
+                                </svg>
+                                Login with MetaMask
+                            </button>
+                            <button class="btn ml-[20px] bg-white text-black border-[#e5e5e5]">
+                                <svg aria-label="Google logo" width="16" height="16" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 512 512">
+                                    <g>
+                                        <path d="m0 0H512V512H0" fill="#fff"></path>
+                                        <path fill="#34a853" d="M153 292c30 82 118 95 171 60h62v48A192 192 0 0190 341">
+                                        </path>
+                                        <path fill="#4285f4" d="m386 400a140 175 0 0053-179H260v74h102q-7 37-38 57">
+                                        </path>
+                                        <path fill="#fbbc02" d="m90 341a208 200 0 010-171l63 49q-12 37 0 73"></path>
+                                        <path fill="#ea4335"
+                                            d="m153 219c22-69 116-109 179-50l55-54c-78-75-230-72-297 55"></path>
+                                    </g>
+                                </svg>
+                                Login with Google
+                            </button>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container max-w-[100%] w-[90%] m-auto">
+            <div class="mt-[200px] ">
+                <h1 class="font-bold text-[55px] text-center">
+                    Used by 400,000+ developers.
+                </h1>
+                <div class=" mt-[50px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                    <div class="card bg-base-100 shadow-xl border border-base-200">
+                        <div class="card-body justify-between gap-6">
+                            <div class="space-y-4">
+                                <p class="text-sm text-base-content/80">
+                                    GitPod is incredibly cool.
+                                </p>
+                                <p class="text-sm text-base-content/80">
+                                    In my opinion, this is a big step in open source software contribution. I'm excited
+                                    to
+                                    see where we go from here.
+                                </p>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <div class="avatar">
+                                    <div class="w-12 h-12 rounded-full">
+                                        <img src="./img/Rectangle (5).png" alt="Ben Halpern" />
+                                    </div>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-sm">Ben Halpern</h4>
+                                    <p class="text-xs text-base-content/60">Creator and Co-founder <span
+                                            class="text-primary">@forem</span> and <span
+                                            class="text-primary">@ThePracticalDev</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-base-100 shadow-xl border border-base-200">
+                        <div class="card-body justify-between gap-6">
+                            <div class="space-y-4">
+                                <p class="text-sm text-base-content/80">
+                                    Let's say we were overwhelmed how smooth <span class="text-primary">@gitpod</span>
+                                    workspaces creation & own Docker image for workspaces worked.
+                                </p>
+                                <p class="text-sm text-base-content/80">
+                                    Plus, installing <span class="text-primary">@code</span> extensions from the store
+                                    and
+                                    integrating <span class="text-primary">@gitlab</span> CI. That blew my mind
+                                    entirely,
+                                    and that is hard ;
+                                </p>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <div class="avatar">
+                                    <div class="w-12 h-12 rounded-full grayscale">
+                                        <img src="./img/Rectangle (6).png" alt="Michael Friedrich" />
+                                    </div>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-sm">Michael Friedrich</h4>
+                                    <p class="text-xs text-base-content/60">Developer Evangelist <span
+                                            class="text-primary">@GitLab</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-base-100 shadow-xl border border-base-200">
+                        <div class="card-body justify-between gap-6">
+                            <div class="space-y-4">
+                                <p class="text-sm text-base-content/80">
+                                    Look at any PR (pull request) in a full coding environment where you can edit,
+                                    build,
+                                    and test the PR code, by just prepending "gitpod.io/#" to the PR URL.
+                                </p>
+                                <p class="text-sm text-base-content/80">
+                                    Super useful for reviewing/testing stuff without having to check it out locally!
+                                </p>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <div class="avatar">
+                                    <div class="w-12 h-12 rounded-full">
+                                        <img src="./img/Rectangle (7).png" alt="Julius Volz" />
+                                    </div>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-sm">Julius Volz</h4>
+                                    <p class="text-xs text-base-content/60">Creator <span
+                                            class="text-primary">@PrometheusIO</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-base-100 shadow-xl border border-base-200">
+                        <div class="card-body justify-between gap-6">
+                            <div class="space-y-4">
+                                <p class="text-sm text-base-content/80">
+                                    I think I'm falling in love with Gitpod. It's incredibly powerful and smooth.
+                                </p>
+                                <p class="text-sm text-base-content/80">
+                                    Just spent a week using it and that integration with "http://gitpod.io" is just
+                                    mind-blowing.
+                                </p>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <div class="avatar">
+                                    <div class="w-12 h-12 rounded-full">
+                                        <img src="./img/Rectangle (8).png" alt="User Avatar" />
+                                    </div>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-sm">Developer</h4>
+                                    <p class="text-xs text-base-content/60">Software Engineer <span
+                                            class="text-primary">@OpenSource</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <img class="mt-[60px]" src="./img/Frame (1).png" alt="">
+
+            </div>
+
+
+        </section>
+
+        <section class="container max-w-[100%] w-[90%] m-auto">
+            <h1 class="font-bold text-[55px] text-center mt-[200px]">Get started now</h1>
+            <div class=" flex flex-row  gap-[80px] mt-[50px]">
+                <div>
+                    <div class="card bg-base-100 w-[500px] shadow-2xl text-center flex flex-col gap-[5px] py-[50px]">
+                        <div class="card-body text-center">
+                            <h2 class="card-title ml-[50px] font-bold text-[32px] ">Connect Git repository!</h2>
+                            <p class="font-normal text-[15px] text-[#12100CB2]">Select a Git provider to start with an
+                                existing <br> project from any Git context.</p>
+                            <div class="flex flex-col w-[265px] gap-[15px] ml-[100px]">
+                                <!-- GitHub -->
+                                <button class="btn bg-black text-white border-black">
+                                    <svg aria-label="GitHub logo" width="16" height="16"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path fill="white"
+                                            d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z">
+                                        </path>
+                                    </svg>
+                                    Login with GitHub
+                                </button>
+
+                                <!-- Google -->
+                                <button class="btn bg-white text-black border-[#e5e5e5]">
+                                    <svg aria-label="Google logo" width="16" height="16"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <g>
+                                            <path d="m0 0H512V512H0" fill="#fff"></path>
+                                            <path fill="#34a853"
+                                                d="M153 292c30 82 118 95 171 60h62v48A192 192 0 0190 341">
+                                            </path>
+                                            <path fill="#4285f4" d="m386 400a140 175 0 0053-179H260v74h102q-7 37-38 57">
+                                            </path>
+                                            <path fill="#fbbc02" d="m90 341a208 200 0 010-171l63 49q-12 37 0 73"></path>
+                                            <path fill="#ea4335"
+                                                d="m153 219c22-69 116-109 179-50l55-54c-78-75-230-72-297 55"></path>
+                                        </g>
+                                    </svg>
+                                    Login with Google
+                                </button>
+
+                                <!-- Amazon -->
+                                <button class="btn bg-[#FF9900] text-black border-[#e17d00]">
+                                    <svg aria-label="Amazon logo" width="16" height="16"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                                        <g fill="black">
+                                            <path
+                                                d="M14.463 13.831c-1.753 1.294-4.291 1.981-6.478 1.981-3.066 0-5.825-1.131-7.912-3.019-.163-.147-.019-.35.178-.234 2.253 1.313 5.041 2.1 7.919 2.1 1.941 0 4.075-.403 6.041-1.238.294-.125.544.197.253.409z">
+                                            </path>
+                                            <path
+                                                d="M15.191 13c-.225-.287-1.481-.137-2.047-.069-.172.019-.197-.128-.044-.238 1.003-.703 2.647-.5 2.838-.266.194.238-.05 1.884-.991 2.672-.144.122-.281.056-.219-.103.216-.528.688-1.709.463-1.997zM11.053 11.838l.003.003c.387-.341 1.084-.95 1.478-1.278.156-.125.128-.334.006-.509-.353-.488-.728-.884-.728-1.784v-3c0-1.272.088-2.438-.847-3.313-.738-.706-1.963-.956-2.9-.956-1.831 0-3.875.684-4.303 2.947-.047.241.131.369.287.403l1.866.203c.175-.009.3-.181.334-.356.159-.778.813-1.156 1.547-1.156.397 0 .847.144 1.081.5.269.397.234.938.234 1.397v.25c-1.116.125-2.575.206-3.619.666-1.206.522-2.053 1.584-2.053 3.147 0 2 1.259 3 2.881 3 1.369 0 2.116-.322 3.172-1.403.35.506.463.753 1.103 1.284a.395.395 0 0 0 .456-.044zm-1.94-4.694c0 .75.019 1.375-.359 2.041-.306.544-.791.875-1.331.875-.737 0-1.169-.563-1.169-1.394 0-1.641 1.472-1.938 2.863-1.938v.416z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                    Login with Amazon
+                                </button>
+                            </div>
+                        </div>
+                        <p class="font-normal text-[20px] text-[#12100CB2]">Or prefix any GitLab, GitHub or Bitbucket
+                            URL
+                            <br> with <br><button class="btn btn-soft btn-warning">gitpod.io/#</button>
+                        </p>
+
+                    </div>
+                </div>
+
+                <div>
+                    <div class="card bg-base-100 w-[500px] shadow-2xl text-center flex flex-col gap-[5px]">
+                        <div class="card-body text-center">
+                            <h2 class="card-title ml-[50px] font-bold text-[32px] ">Launch an example workspace!</h2>
+                            <p class="font-normal text-[15px] text-[#12100CB2]">Dive into one of our example workspaces
+                            </p>
+                            <img class="w-[350px] ml-[80px] pb-[70px]" src="./img/Frame (2).png" alt="">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+    </main>
+
+    <footer class="footer sm:footer-horizontal bg-base-200 text-base-content p-10 mt-[160px]">
+        <div class="container max-w-[100%] w-[90%] m-auto">
+
+            <footer class="footer sm:footer-horizontal bg-base-200 text-base-content p-10">
+                <nav>
+                    <h6 class="footer-title">Gitpod</h6>
+                    <a class="link link-hover">Features</a>
+                    <a class="link link-hover">Pricing</a>
+                    <a class="link link-hover">Changelog</a>
+                    <a class="link link-hover">Self-Hosted</a>
+                    <a class="link link-hover">Gitpod vs GitHub <br>Codespaces</a>
+                    <a class="link link-hover">Codespaces</a>
+                    <a class="link link-hover">Status</a>
+                </nav>
+                <nav>
+                    <h6 class="footer-title">Developer</h6>
+                    <a class="link link-hover">Getting started</a>
+                    <a class="link link-hover">Screencasts</a>
+                    <a class="link link-hover">Blog</a>
+                    <a class="link link-hover">Documentation</a>
+                    <a class="link link-hover">Report a bug</a>
+                    <a class="link link-hover">Community</a>
+                </nav>
+                <nav>
+                    <h6 class="footer-title">Company</h6>
+                    <a class="link link-hover">About</a>
+                    <a class="link link-hover">Careers</a>
+                    <a class="link link-hover">Contact</a>
+                    <a class="link link-hover">Media Kit</a>
+                </nav>
+                <nav>
+                    <h6 class="footer-title">Legal</h6>
+                    <a class="link link-hover">Terms of Service</a>
+                    <a class="link link-hover">Privacy Policy</a>
+                    <a class="link link-hover">Imprint</a>
+                </nav>
+            </footer>
+            <footer class="footer bg-base-200 text-base-content border-base-300 border-t px-10 py-4">
+                <aside class="grid-flow-col items-center">
+                    <img src="./img/Frame (23).png" alt="">
+                </aside>
+                <nav class="md:place-self-center md:justify-self-end">
+                    <img src="./img/Frame (4).png" alt="">
+                </nav>
+            </footer>
+        </div>
+    </footer>
+
+</body>
+
+</html>
